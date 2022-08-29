@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int prev = 0,n,sort = 0,count = 0;
+    int prev,n,sort = 1,count = 0;
+    scanf("%d",&prev);
+    count += 1;
     do{
         scanf("%d",&n);
         if(n > prev) sort += 1;
