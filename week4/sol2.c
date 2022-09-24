@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int prev,n,sort = 1,count = 0,less = -1;
+    int prev,n,sort = 1,less = -1;
     scanf("%d",&prev);
     do{
         scanf("%d",&n);
