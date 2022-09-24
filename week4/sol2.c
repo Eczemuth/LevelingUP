@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    int prev = 0,n,sort = 1;
-    scanf("%d",&prev);
+    int prev = 0,n,sort = 0;
     do{
         scanf("%d",&n);
-        if(n < prev) sort = 0;
+        if(n >= prev || n <= prev) sort = 1;
         prev = n;
     }while(n != 999);
     if(sort) printf("YES");
