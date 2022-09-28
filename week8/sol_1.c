@@ -5,14 +5,12 @@ int main(){
     long long int row   = 0b0000000000000000000000000000000000000000000000000000000011111111;
     long long int col   = 0b0000000100000001000000010000000100000001000000010000000100000001;
 
-    long long int a,b;
     int n,x,y,count = 0;
 
     scanf("%d",&n);
     for(int i = 0;i<n;i++){
         scanf("%d %d",&y,&x);
         board = board& ~(row<<8*(y-1));
-        a = board;
         board = board& ~(col<<(x-1));
     }
     for(int i = 0;i<64;i++){
